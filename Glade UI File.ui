@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+
+  <object id="window_main" class="GtkWindow">
+    <property name="title">Example App</property>
+    <property name="width-request">150</property>
+    <property name="height-request">90</property>
+
+    <child>
+      <object id="scrolled_window_main" class="GtkScrolledWindow">
+
+      <child>
+        <object id="grid_main" class="GtkGrid">
+          <property name="halign">GTK_ALIGN_CENTER</property>
+          <property name="valign">GTK_ALIGN_CENTER</property>
+        
+        <child>
+          <object id="button_hello" class="GtkButton">
+            <property name="label">Hello</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        
+        <child>
+          <object id="button_hi" class="GtkButton">
+            <property name="label">Hi</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        
+        <child>
+          <object id="button_quit" class="GtkButton">
+            <property name="label">Quit</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+              <property name="column-span">2</property>
+            </layout>
+          </object>
+        </child>
+
+        </object>
+      </child>
+      </object>
+    </child>
+  </object>
+</interface>
